@@ -70,6 +70,11 @@ jobs:
       - image: circleci/php:7.2
     steps: *build_and_test_steps
 
+  # Build and test the project the project against PHP 7.1.
+  build_and_test_php_7_1:
+    docker:
+      - image: circleci/php:7.1
+    steps: *build_and_test_steps
 
 # List of workflows.
 workflows:
